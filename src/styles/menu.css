@@ -1,0 +1,194 @@
+@font-face {
+    font-family: "Sansdiesgo";
+    src: url("../fonts/Sansdiesgo.ttf") format("ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.menu-wrapper {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    border-radius: 5px;
+    background: linear-gradient(60deg, blue, lightblue 20%, #91d7ff 40%, #377fdd 60%, #0c0c75 80%, #24b1e0 100%);
+    width: 270px;
+    height: 95vh;
+    float: left;
+    z-index: 2;
+    display: grid;
+}
+
+.menu-container {
+    margin: 5px;
+    background: linear-gradient(40deg, #c7c7c7 , #ffffff 60%);
+    border-radius: 5px;  
+    z-index: 3; 
+}   
+
+.menu-title {
+    font-size: 20px;
+    font-weight: 600;
+    font-family: "Sansdiesgo", sans-serif;
+    justify-content: center;
+    text-align: center;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+.menu-divider {
+    border: double 1px gray;
+    height: 1px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.menu-buttons {
+    display: flex;
+    margin: 10px;
+    justify-content: center;
+}
+
+.menu-button {
+    background-color: transparent;
+    border: none;
+    margin: 2px;
+    cursor: pointer;
+    font-size: 12px;
+    font-family: "Sansdiesgo", sans-serif;
+}
+
+.menu-button:hover {
+    color: blue;
+}
+
+#delete {
+    background-color: transparent;
+    border: none;
+    margin: 2px;
+    cursor: pointer;
+    font-size: 12px;
+    font-family: "Sansdiesgo", sans-serif;
+    justify-content: center;
+    text-align: center;
+    width: 60px;
+}
+
+#delete:disabled {
+    color: grey;
+    cursor: not-allowed;
+}
+
+#delete:hover:disabled {
+    color: grey;
+    cursor: not-allowed;
+}
+
+.menu-components-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.menu-components-title {
+    font-size: 14px;
+    font-weight: normal;
+    font-family: "Sansdiesgo", sans-serif;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.menu-components-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.menu-components-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.menu-components-icon {
+    width: 50px;
+    height: 35px;
+    margin: 2px;
+}
+
+.menu-components-label {
+    width: 50px;
+    font-size: 12px;
+    font-weight: 500;
+    font-family: "Sansdiesgo", sans-serif;
+    margin-bottom: 5px;
+    margin-left: 2px;
+    text-align: center;
+}
+
+.menu-components-component {
+    display: grid;
+}
+
+.menu-components-wiremode {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 12px;
+}
+
+:root {
+    --width-of-switch: 2.5em;
+    --height-of-switch: 1em;
+    --size-of-icon: 1em;
+    --slider-offset: 0.3em;
+}
+
+.switch input{
+    width: 0;
+    height: 0;
+    opacity: 0;
+}
+
+.switch {
+    display: block;
+    position: relative;
+    width: var(--width-of-switch);
+    height: var(--height-of-switch);
+}
+
+.slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #dad9d9;
+    border-radius: 20px;
+}
+
+.slider::before {
+    position: absolute;
+    content: "";
+    height: var(--size-of-icon, 1em);
+    width: var(--size-of-icon, 1em);
+    border-radius: 20px;
+    left: var(--slider-offset, 0.5em);
+    top: 50%;
+    transform: translateY(-50%);
+    background: linear-gradient(40deg, #5f5f5f, #ffffff 70%);
+    border: 1px solid #000000;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+input:checked + .slider{
+    background: #dadadf;
+}
+
+input:checked + .slider::before {
+    left: calc(100% - (var(--size-of-icon, 1em) + var(--slider-offset, 0.5em)));
+    background: linear-gradient(40deg, #0066ff, #ffffff 70%);
+    cursor: pointer;
+}

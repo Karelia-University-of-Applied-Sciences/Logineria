@@ -1,0 +1,80 @@
+@font-face {
+    font-family: "Sansdiesgo";
+    src: url("../fonts/Sansdiesgo.ttf") format("ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: lightgray;
+    overflow: hidden;
+}
+
+.app-container {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.custom-confirm-dialog {
+    font-family: "Sansdiesgo", sans-serif;
+    font-size: 15px;
+    background: linear-gradient(to top, #c7c7c7 5%, #ffffff 50%, #c7c7c7 );
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid darkblue;
+    filter: drop-shadow(0px 0px 2px gray);
+}
+
+.confirmation-button {
+    font-family: "Sansdiesgo", sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    margin: 10px;
+    padding: 5px;
+    width: 100px;
+    background-color: whitesmoke;
+    border: 1px solid darkblue;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.confirmation-button:hover {
+    background-color: white;
+}
+
+.confirmation-button:active {
+    background-color: lightgrey;
+}
+
+.btn-runsim-wrapper {
+    z-index: 1000;
+    position: fixed;
+    top: 20px;
+    left: 45vw;
+    width: 124px;
+    height: 34px;
+    background: linear-gradient(40deg, #0051ff, #00b7ff 60%);
+    filter: drop-shadow(0px 0px 5px gray);
+    border-radius: 4px;
+}
+
+.btn-runsim {
+    font-family: "Sansdiesgo", sans-serif;
+    font-size: 14px;
+    margin: 2px;
+    width: 120px;
+    height: 30px;
+}
+
+.btn-runsim:hover {
+    cursor: pointer;
+    background: lightyellow;
+    color: blue;
+}

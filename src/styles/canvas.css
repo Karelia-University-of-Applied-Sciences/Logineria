@@ -1,0 +1,11 @@
+.canvas-container {
+    position: absolute;
+    top: 0px;
+    left: 290px;
+    margin-left: 0px;
+}
+
+.canvas-stage {
+    background-color: lightgray;
+    padding: 2px;
+}

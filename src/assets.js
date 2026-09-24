@@ -1,0 +1,16 @@
+export const andImage = "./assets/AND.png";
+export const andSelectedImage = "./assets/AND_selected.png";
+export const orImage = "./assets/OR.png";
+export const orSelectedImage = "./assets/OR_selected.png";
+export const notImage = "./assets/NOT.png";
+export const notSelectedImage = "./assets/NOT_selected.png";
+export const nandImage = "./assets/NAND.png";
+export const nandSelectedImage = "./assets/NAND_selected.png";
+export const norImage = "./assets/NOR.png";
+export const norSelectedImage = "./assets/NOR_selected.png";
+export const xorImage = "./assets/XOR.png";
+export const xorSelectedImage = "./assets/XOR_selected.png";
+export const xnorImage = "./assets/XNOR.png";
+export const xnorSelectedImage = "./assets/XNOR_selected.png";
+export const inputImage = "./assets/INPUT.png";
+export const outputImage = "./assets/OUTPUT.png";
