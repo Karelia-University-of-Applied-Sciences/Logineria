@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Guide">
+  <link rel="stylesheet" href="../src/styles/guide.css">
+  <script src="../src/scripts/guide.js" defer></script>
+  <title>Guide</title>
+</head>
+<body class="guide-body">
+    <main>
+        <h1 name="adding-components" onclick="handleTransition(event)">Adding components</h1>
+        <p id="adding-components">
+            Add components to the canvas by clicking on the desired component in the component menu. Your mouse cursor will change to indicate that you are in component placement mode. 
+            <br /><br />While the mode is active, move your cursor to the desired location on the canvas and click to place the component.
+        </p>
+        <h1 name="removing-components" onclick="handleTransition(event)">Removing components</h1>
+        <p id="removing-components">
+            To remove a component, select it by clicking on it. The component will be highlighted, indicating that it is selected. <br /><br/>
+            Once the component is selected, press the "Delete selected" button in the component menu to remove it from the canvas. <br /><br/>
+            You can remove multiple components by selecting more than one. Removing a component will also remove any wires connected to the component.
+        </p>
+        <h1 name="moving-components" onclick="handleTransition(event)">Moving components</h1>
+        <p id="moving-components">
+            Moving components is done simply by clicking and holding the mouse button over the component and dragging it to the desired location.
+        </p>
+        <h1 name="connecting-components" onclick="handleTransition(event)">Connecting components</h1>
+        <p id="connecting-components">
+            To connect components with wires, click the "Wire mode" slider button in the component menu. The component inputs and outputs will be highlighted, with a circle indicating the connection points. <br /><br/>
+            Click on the ports to connect them with a wire. The wire will be drawn between the two ports, and the connection will be established. <br /><br/>
+            Once you are done connecting component ports, click the "Wire mode" button again to exit wire mode. <br /><br/>
+            You can also remove wires by clicking on them and pressing the "Delete selected" button in the component menu.
+        </p>
+        <h1 name="import-export" onclick="handleTransition(event)">Import / Export</h1>
+        <p id="import-export">
+            You can export your current circuit design to a file by clicking the "Export" button in the menu. This will prompt a file download containing the circuit data in JSON format. <br /><br/>
+            You can also import a previously exported circuit design by selecting "Import" from the menu and choosing the previously exported JSON file. The circuit will be loaded onto the canvas, allowing you to continue working on it. <br /><br/>
+            Note that importing a circuit design will replace the current circuit on the canvas, so make sure to save your work before importing a new design.
+        </p>
+    </main>
+</body>
+</html>
